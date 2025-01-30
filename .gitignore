@@ -1,4 +1,29 @@
-volumes
-data
-certs
+# Environment files (may contain secrets)
 .env
+
+# Backup files
+config-backup.json
+data/
+data-backup/
+mattermost-db-backup.sql
+
+# Docker-related files
+docker-compose.override.yml
+docker-compose.nginx.yml
+docker-compose.without-nginx.yml
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Volumes and generated data
+volumes/
+certs/
+
+# Compiled or dependency files (if applicable)
+node_modules/
+dist/
